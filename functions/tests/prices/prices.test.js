@@ -21,6 +21,13 @@ describe("getPrices Testing Suite", () => {
     response.status().send({ undefined });
     jest.resetAllMocks();
   });
+
+  describe("when preflight request is sent", () => {
+    it("returns a 200 OK response", async () => {
+      const res = await getPrices({ method: "OPTIONS" }, response);
+      expect(res.statusCode).toEqual(200);
+    });
+  });
   describe("when validating", () => {
     describe("if incorrect token is supplied", () => {
       it("returns 401", async () => {
