@@ -1,5 +1,7 @@
 # Rideshare Firebase Functions
 
+![rideshare-firebase-functions](https://github.com/CSE115A/rideshare-firebase-functions/workflows/rideshare-firebase-functions/badge.svg)
+
 This respository contains all our backend APIs that our front end project needs. 
 * Our [`autocomplete`](/functions/autocomplete/) function queries and returns the predictied places based on their inputs
 * Our [`getGeo`](functions/geocode/) function queries and returns the latitude and longitudes of our destination and origin addresses
