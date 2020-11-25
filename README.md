@@ -32,6 +32,10 @@ Can install these by navigating to the [`/functions`](functions/) directory and 
 
 ### Start 
 
+**IMPORTANT NOTE**
+
+*Before you begin a local server, make sure to run `firebase functions:config:get > .runtimeconfig.json` within the `/functions` directory to get the environment variables for this project. To learn more about what environment variables are within each scope of the functions, please refer to the README's of each specific function.*
+
 Within the [`/functions`](functions/) directory, run: 
 
 * `yarn serve` to begin an [emulator UI suite](https://firebase.google.com/docs/emulator-suite) on `localhost:4000`
