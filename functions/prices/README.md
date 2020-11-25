@@ -3,34 +3,6 @@
 Javascript firebase function that queries Lyft and Uber's API to get the pricing between two locations
 
 ## Development 
-
-### Dependencies 
-
-Can install these by navigating to the [`/functions`](functions/) directory and running `yarn -i`, `yarn install`, or `yarn`
-
-* Development 
-  * [`eslint`](https://eslint.org/docs/user-guide/getting-started)
-  * [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier)
-  * [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier)
-  * [`eslint-plugin-promise`](https://github.com/xjamundx/eslint-plugin-promise)
-  * [`firebase-functions-test`](https://github.com/firebase/firebase-functions-test)
-  * [`prettier`](https://prettier.io/) 
-* Production 
-  * [`axios`](https://github.com/axios/axios) 
-  * [`firebase-admin`](https://github.com/firebase/firebase-admin-node)
-  * [`firebase-functions`](https://github.com/firebase/firebase-functions)
-
-### Start 
-
-Within the [`/functions`](functions/) directory, run: 
-
-* `yarn serve` to begin an [emulator UI suite](https://firebase.google.com/docs/emulator-suite) on `localhost:4000`
-  * As per the [`firebase.json`](firebase.json#L8-L10) file, all the functions will be hosted off of `localhost:5000`. Visiting the Emulator UI Suite will provide more information about more specific endpoint. 
-
-### Testing Suite 
-
-WIP 
-
 ### Environment Variables 
 
 We have the following environment variables: 
@@ -125,11 +97,3 @@ All responses will be in the following format:
     }
 } 
 ```
-
-## Technologies 
-
-* [Firebase](https://firebase.google.com/) 
-* [JavaScript](https://www.javascript.com/) 
-* [ReactJS](https://reactjs.org/) 
-* [ESlint](https://eslint.org/) 
-* [Prettier](https://prettier.io/) 

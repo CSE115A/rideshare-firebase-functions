@@ -1,20 +1,5 @@
 # Firebase getGeo function
-Maps address to longitude and latitude values.
-
-## Production Dependecies
-
-- [`axios`](https://github.com/axios/axios)
-- [`firebase-functions`](https://github.com/firebase/firebase-functions)
-- [`Geocoding API`](https://developers.google.com/maps/documentation/geocoding/overview)
-
-## Setup
-Go to `./functions` folder and run command `yarn`.
-
-In [`/functions`](./functions) directory start [emulator](https://firebase.google.com/docs/emulator-suite)
-by running the command 
-
-`yarn serve` 
-
+Firebase Function that queries and returns the Latitude and Longitude of the given input address.
 
 ## Environment Variables
 
@@ -25,14 +10,14 @@ by running the command
   }
 }
 ```
-Environemnt variables can be installed by running the command
-`firebase functions:config:get > .runtimeconfig.json` in the `/function` directory.
-
+These actual values of these can be obtained by running:
+ `firebase functions:config:get > .runtimeconfig.json`.
+ 
 These variables allow us to gain access to [GeoCoding API](https://developers.google.com/maps/documentation/geocoding/start)
 
 ## Schemas
 
-## Request
+### Request
 ```
 curl http://localhost:5001/cse115a/us-central1/GeoTest\?address=ADDRESS
 ```
@@ -50,7 +35,7 @@ For Example:
 1600 Amphitheatre Parkway, Mountain View, CA
 
 
-## Response
+### Response
 
 All responses follow this format
 ```json
