@@ -9,6 +9,13 @@ describe("getGeo Testing Suite", () => {
     response.status().send({ undefined });
     jest.resetAllMocks();
   });
+
+  describe("when sending preflight request", () => {
+    it("returns 200 with empty body", async () => {
+      const res = await getGeo({ method: "OPTIONS" }, response);
+      expect(res.statusCode).toEqual(200);
+    });
+  });
   describe("when given proper params", () => {
     it("returns 200 OK with proper body", async () => {
       getGoogleCodes.mockImplementationOnce(() =>
